@@ -1,0 +1,28 @@
+{
+  "name": "gulp4-tutorial",
+  "author": "[Code Mafia] (https://www.youtube.com/channel/UCQ8iiBr45MDWD7hDp3FDmQg)",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production gulp build",
+    "start": "cross-env NODE_ENV=production gulp serve",
+    "dev": "gulp serve"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.7",
+    "cross-env": "^7.0.3",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-if": "^3.0.0",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "gulp-config": {},
+  "main": "index.js",
+  "description": "",
+  "dependencies": {}
+}
