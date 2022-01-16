@@ -37,7 +37,7 @@ function startAppServer() {
   // });
 
   server.init({
-      proxy: 'http://localhost:8888/template_gulp/',
+      proxy: 'http://localhost:8888/template_gulp/', // パスを記入
   });
 
 
