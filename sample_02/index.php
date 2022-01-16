@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/sample.css">
-  <title>第1階層</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
 </head>
+
 <body>
-  <h1 class="floor-01__title">第1階層</h1>
-  <a href="./sample/index.html">第2階層</a>
+  <h1 class="test_02">階層_02</h1>
+  <a href="../index.php">階層_01</a>
+  <a href="./sample_03/">階層_03</a>
 </body>
 </html>

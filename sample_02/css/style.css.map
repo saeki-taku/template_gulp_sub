@@ -1,0 +1,1 @@
+{"version":3,"sources":["sample_02/css/style.scss"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,gBAAgB;EAChB,aAAa,EAAA","file":"style.css","sourcesContent":[".test_02{\n  color: brown;\n  background: gray;\n  padding: 10px;\n}"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["css/style.scss"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,iBAAiB;EACjB,aAAa,EAAA","file":"style.css","sourcesContent":[".test_01{\n  color: yellow;\n  background: black;\n  padding: 10px;\n}\n"]}

@@ -24,6 +24,7 @@ function styles() {
     .pipe(dest('./'));
 }
 
+// 追加・変更以外のファイルも影響されるためコーディング担当が2人以上の場合は現状手動で行う
 function clean() {
   return del(['./dist']);
 }
@@ -31,24 +32,21 @@ function clean() {
 function startAppServer() {
   // server.init({
   //   server: {
-  //     baseDir: './',
+  //     baseDir: './dist',
   //   },
   // });
 
-  browserSync.init({
-    proxy: 'sample.local', // ローカルにある「Site Domain」に合わせる
-    notify: false, // ブラウザ更新時に出てくる通知を非表示にする
-    // open: 'external',
+  server.init({
+      proxy: 'http://localhost:8888/template_gulp/',
   });
 
-  watch(['./css/*.scss', './**/css/*.scss'], styles);
-  watch(['./**/*.scss']).on(
-    'change',
-    server.reload
-  );
+
+  watch(['css/*.scss', './**/css/*.scss'], styles);
+  watch(['css/*.scss', './**/css/*.scss']).on('change', server.reload);
 }
 
-const build = series(clean, parallel(styles));
+// const build = series(clean, parallel(styles)); clean()を使用する場合はコメントアウト
+const build = series(styles);
 const serve = series(build, startAppServer);
 
 exports.styles = styles;
